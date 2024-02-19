@@ -4,10 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var contactRouter = require('./routes/contact');
-
 var app = express();
 
 // view engine setup
@@ -20,9 +16,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+/* ========== ROUTES ========== */
+var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
+
+var usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
+
+var contactRouter = require('./routes/contact');
 app.use('/contact', contactRouter);
+
+
+
+/* ========== MISC ROUTES ========== */
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

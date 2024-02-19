@@ -1,0 +1,73 @@
+/* ========== PALETTE ==========
+  Prussian blue #0B3954
+  Teal #087E8B
+  Columbia blue #BFD7EA
+  Bittersweet #FF5A5F
+  Fire engine red #C81D25
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab:wght@100..900&display=swap');
+
+h1, h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  position: relative;
+}
+
+body > * {
+  padding: 0 5em;
+}
+
+a {
+  color: #0B3954;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #0DBFD3;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #F0F5FA;
+}
+
+.nav-item {
+  margin: 0 1em;
+}
+
+footer {
+  text-align: center;
+  background-color: #BFD7EA;
+  color: #0B3954;
+  padding: 2em 0;
+}
+
+footer .list-group-item {
+  border: none;
+  background-color: transparent;
+}
+
+footer .list-group {
+  width: 50%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}

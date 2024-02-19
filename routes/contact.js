@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
+  let config = {
+    title: 'Contact',
+    stylesheet: 'contact.css', 
+  }
+
+  res.render('contact', config);
 });
 
 module.exports = router;

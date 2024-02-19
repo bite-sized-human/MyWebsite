@@ -9,6 +9,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 h1, h2 {
   font-family: "DM Serif Display", serif;
@@ -21,14 +22,28 @@ body, html {
   padding: 0;
 }
 
+header {
+  padding: 5em;
+}
+
+h1 {
+  margin: 2em 0;
+  font-size: 60px;
+}
+
+header {
+  background-color: #BFD7EA;
+  color: #0B3954;
+}
+
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", serif;
   font-size: 20px;
   position: relative;
 }
 
 body > * {
-  padding: 0 5em;
+  padding: 3em 5em;
 }
 
 a {
@@ -37,37 +52,58 @@ a {
 }
 
 a:hover {
-  color: #0DBFD3;
+  color: #F0F5FA;
+  background-color: #0DBFD3;
 }
 
 .navbar {
   width: 100%;
   position: fixed;
   background-color: #F0F5FA;
+  padding: 0;
+}
+
+.navbar-nav {
+  justify-content: end;
 }
 
 .nav-item {
-  margin: 0 1em;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 1em;
 }
 
 footer {
   text-align: center;
+  
   background-color: #BFD7EA;
   color: #0B3954;
   padding: 2em 0;
 }
 
+footer > * {
+  justify-content: center;
+}
+
 footer .list-group-item {
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
 footer .list-group {
   width: 50%;
+  justify-content: center;
 }
 
 .icon {
   width: 50px;
   height: 50px;
   object-fit: contain;
+}
+
+section {
+  border-bottom: 1px solid grey;
 }

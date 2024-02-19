@@ -19,13 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /* ========== ROUTES ========== */
 var indexRouter = require('./routes/index');
-app.use('/', indexRouter);
-
-var usersRouter = require('./routes/users');
-app.use('/users', usersRouter);
-
 var contactRouter = require('./routes/contact');
-app.use('/contact', contactRouter);
+var aboutRouter = require('./routes/about');
+app.get('/', indexRouter);
+app.get('/contact', contactRouter);
+app.get('/about', aboutRouter);
 
 
 
